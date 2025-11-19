@@ -1,9 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 import { useTheme } from '../contexts/ThemeContext'
 import { GOOGLE_FORM_URL } from '../config/formConfig'
 
 const Header = () => {
   const location = useLocation()
+  const [mobileOpen, setMobileOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   
   const isActive = (path) => location.pathname === path
@@ -71,19 +73,49 @@ const Header = () => {
         </div>
       </div>
       
-      <div className="md:hidden flex items-center gap-2">
-        <button 
-          onClick={toggleTheme}
-          className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#264532] dark:bg-[#264532] bg-gray-200 text-white dark:text-white text-gray-700 hover:bg-[#2d5339] dark:hover:bg-[#2d5339] hover:bg-gray-300 transition-colors"
-          aria-label="Toggle theme"
-        >
-          {theme === 'dark' ? (
-            <span className="material-symbols-outlined text-xl">light_mode</span>
-          ) : (
-            <span className="material-symbols-outlined text-xl">dark_mode</span>
-          )}
-        </button>
-        <span className="material-symbols-outlined text-white dark:text-white text-gray-900">menu</span>
+      <div className="md:hidden relative">
+        <div className="flex items-center gap-2">
+          <button 
+            onClick={toggleTheme}
+            className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#264532] dark:bg-[#264532] bg-gray-200 text-white dark:text-white text-gray-700 hover:bg-[#2d5339] dark:hover:bg-[#2d5339] hover:bg-gray-300 transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? (
+              <span className="material-symbols-outlined text-xl">light_mode</span>
+            ) : (
+              <span className="material-symbols-outlined text-xl">dark_mode</span>
+            )}
+          </button>
+
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 dark:bg-[#122017] text-gray-900 dark:text-white hover:bg-gray-200 transition-colors"
+          >
+            <span className="material-symbols-outlined text-xl">{mobileOpen ? 'close' : 'menu'}</span>
+          </button>
+        </div>
+
+        {mobileOpen && (
+          <div className="absolute right-0 mt-2 w-[220px] bg-white dark:bg-[#0f271e] border border-gray-200 dark:border-[#366347] rounded-lg p-3 shadow-lg z-50">
+            <nav className="flex flex-col gap-2">
+              <Link to="/features" onClick={() => setMobileOpen(false)} className="text-gray-700 dark:text-[#96c5a8] text-sm font-medium">Features</Link>
+              <Link to="/partners" onClick={() => setMobileOpen(false)} className="text-gray-700 dark:text-[#96c5a8] text-sm font-medium">Developers</Link>
+              <Link to="/pricing" onClick={() => setMobileOpen(false)} className="text-gray-700 dark:text-[#96c5a8] text-sm font-medium">Pricing</Link>
+              <Link to="/contact" onClick={() => setMobileOpen(false)} className="text-gray-700 dark:text-[#96c5a8] text-sm font-medium">Contact Us</Link>
+
+              <div className="pt-2 border-t border-gray-100 dark:border-[#163526] mt-2 flex flex-col gap-2">
+                <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
+                  <button className="w-full text-left px-3 py-2 rounded-md bg-primary text-white font-bold">Get Started</button>
+                </a>
+                <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
+                  <button className="w-full text-left px-3 py-2 rounded-md bg-[#264532] text-white">Log In</button>
+                </a>
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   )

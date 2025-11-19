@@ -54,10 +54,15 @@ const LandingPage = () => {
                     <h2 className="text-gray-600 dark:text-[#96c5a8] text-sm font-normal leading-normal sm:text-base">
                       Create, edit, and design with the power of artificial intelligence, all in one place.
                     </h2>
+                    <h2 className="text-gray-600 dark:text-[#96c5a8] text-sm font-normal leading-normal sm:text-base">
+                      I’m excited to introduce Super App, an upcoming all-in-one platform designed to simplify daily tasks with intuitive, AI-powered features.
+I’m opening a waitlist to understand user interest and invite early adopters for testing and feedback.
+If you’d like to explore the app before launch, join the waitlist!
+                    </h2>
                   </div>
                   <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] sm:text-base">
                     <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="truncate">
-                      Get Started for Free
+                      Join the Waitlist
                     </a>
                   </button>
                 </div>
