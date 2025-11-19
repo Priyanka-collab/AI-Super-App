@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Features - SuperApp</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e079",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-dark text-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#264532] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">SuperApp</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal" href="#">Features</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Developers</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Pricing</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Blog</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#264532] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+<!-- Mobile menu button can be added here -->
+</header>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4 py-16 text-center sm:text-left">
+<div class="flex w-full flex-col items-center gap-3">
+<p class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Features</p>
+<p class="text-[#96c5a8] text-base font-normal leading-normal max-w-xl">Explore the powerful creative tools and developer platform of our AI Super App.</p>
+</div>
+</div>
+<!-- FeatureSection 1: Creative Tools -->
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="flex flex-col gap-4">
+<h1 class="text-white tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Creative Tools for Everyone
+                            </h1>
+<p class="text-[#96c5a8] text-base font-normal leading-normal max-w-[720px]">
+                                Unleash your creativity with our suite of AI-powered tools. Designed for simplicity, built for power.
+                            </p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">AI Passport Photo Generator</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                                        Instantly create compliant passport photos from any selfie with automatic background removal, compliance checks, and support for multiple country formats.
+                                    </p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">AI Storybook Creator</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                                        Generate beautifully illustrated children's stories from a simple prompt. Choose your art style and enjoy consistent characters throughout your tale.
+                                    </p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">movie_edit</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">Intelligent Video Editor</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                                        Effortlessly edit videos with AI-powered tools like auto-captions, smart trimming, and scene detection to create professional-quality content in minutes.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- FeatureSection 2: For Developers -->
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-4">
+<h1 class="text-white tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    For Our Developer Partners
+                                </h1>
+<p class="text-[#96c5a8] text-base font-normal leading-normal max-w-[720px]">
+                                    Build on our platform to reach a massive audience. We provide the tools, you bring the innovation.
+                                </p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit">
+<span class="truncate">View API Docs</span>
+</button>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">monetization_on</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">Monetization</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                                        Easily integrate monetization models into your applications and start earning from your creations.
+                                    </p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">api</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">Robust API Access</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                                        Leverage our powerful and well-documented APIs to build innovative AI-driven features and services.
+                                    </p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-white text-lg font-bold leading-tight">Audience Reach</h2>
+<p class="text-[#96c5a8] text-sm font-normal leading-normal">Tap into our rapidly growing user base and showcase your tools to a global audience.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTASection -->
+<div class="@container">
+<div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+<div class="flex flex-col gap-2 text-center items-center">
+<h1 class="text-white tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Ready to get started?
+                                </h1>
+<p class="text-[#96c5a8] text-base font-normal leading-normal max-w-[720px]">Join us and explore the future of AI-powered creativity and development.</p>
+</div>
+<div class="flex flex-1 justify-center">
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

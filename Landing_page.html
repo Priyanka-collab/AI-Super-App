@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Super App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#39E079", "background-light": "#f6f8f7", "background-dark": "#122017"}, fontFamily: {display: "Space Grotesk"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-b-[#302839] px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-6 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">AI Super App</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal" href="#">Pricing</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">menu</span>
+</div>
+</header>
+<div class="@container">
+<div class="flex flex-col gap-6 px-4 py-16 md:py-24 @[864px]:flex-row-reverse">
+<div class="flex-1 w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl @[864px]:aspect-auto" data-alt="Abstract gradient from blue to purple representing AI creativity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBv32ilPGPce5M6nxFZNQAjm36oNei7RbT_snN3piWPX6OHXxkBvkp9nJ7u30z_ZJ7TjyribTF58deBXBI0t8ZOO1chcOCkZ-9cY00i3nd9CHdSi0IPDTiM74vIJcqr48w70Ml0DR3RSvhYsfA7JUCGcFmqQDbErW4ervykYNDZzQ0cK29RuMBEZk2ydlMewCHpNU_356_NzQkHMOLrr_j5VpWRF6vK8BtumfCKUaf8mEWmJIJZAw936b9w9ikvfe_AQ4DYQL7XLZk");'></div>
+<div class="flex flex-1 flex-col gap-6 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                        Your Complete AI Creative Suite.
+                                    </h1>
+<h2 class="text-slate-600 dark:text-slate-300 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                        Create, edit, and design with the power of artificial intelligence, all in one place.
+                                    </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Get Started for Free</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-10 px-4 py-16 md:py-24 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Explore Our Powerful AI Tools
+                            </h1>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal max-w-[720px]">Everything you need to bring your creative ideas to life, powered by advanced AI.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-0">
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#473b54] bg-white dark:bg-[#211c27] p-6 flex-col text-center items-center">
+<div class="w-12 h-12 rounded-lg bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">AI Passport Photo</h2>
+<p class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal">Automates cropping, background removal, and formatting for official photos.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#473b54] bg-white dark:bg-[#211c27] p-6 flex-col text-center items-center">
+<div class="w-12 h-12 rounded-lg bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">AI Storybook Creator</h2>
+<p class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal">Generate beautifully illustrated stories from simple text prompts in minutes.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#473b54] bg-white dark:bg-[#211c27] p-6 flex-col text-center items-center">
+<div class="w-12 h-12 rounded-lg bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">movie_edit</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">AI Video Editor</h2>
+<p class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal">Smart editing with automatic scene detection, captioning, and effects.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#211c27] border-y border-slate-200 dark:border-[#473b54]">
+<div class="@container">
+<div class="flex flex-col items-center justify-center gap-6 px-4 py-16 text-center md:py-24 @[480px]:gap-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Join Our Platform &amp; Monetize Your AI App
+                            </h1>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal max-w-[720px]">
+                                Integrate your AI-powered applications with our platform to reach a wider audience, gain valuable user feedback, and create new revenue streams.
+                            </p>
+</div>
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+<span class="truncate">Become a Partner</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="@container">
+<div class="flex flex-col justify-center items-center gap-6 px-4 py-16 md:py-24 @[480px]:gap-8">
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Ready to Start Creating?
+                                </h1>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal max-w-[720px]">Sign up now and get instant access to our full suite of AI tools.</p>
+</div>
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+<span class="truncate">Get Started for Free</span>
+</button>
+</div>
+</div>
+</div>
+<footer class="flex flex-col gap-6 px-5 py-10 text-center @container border-t border-slate-200 dark:border-b-[#302839]">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 @[480px]:flex-row @[480px]:justify-center">
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">Company</a>
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">About Us</a>
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">Contact</a>
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">Support</a>
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">Help Center</a>
+<a class="text-slate-600 dark:text-[#ab9db9] text-sm font-normal leading-normal" href="#">Privacy Policy</a>
+</div>
+<p class="text-slate-500 dark:text-[#ab9db9] text-sm font-normal leading-normal">© 2024 AI Super App. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
